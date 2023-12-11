@@ -1,0 +1,26 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krudy/TO-DO-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krudy/TO-DO-list/issues"
+  },
+  "homepage": "https://github.com/krudy/TO-DO-list#readme",
+  "dependencies": {
+    "node": "^21.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
