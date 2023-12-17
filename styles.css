@@ -77,9 +77,10 @@ button:hover {
 }
 
 .hobby {
-    color: darkgoldenrod;
+    color: rgb(181, 49, 49);
 }
 
 .work {
+    color: #06290b;
     text-decoration: underline;
 }
