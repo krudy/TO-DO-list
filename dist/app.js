@@ -1,10 +1,6 @@
 const tasksContainerElement = document.querySelector(".tasks");
 const taskNameInputElement = document.querySelector("#name");
 const addButtonElement = document.querySelector(".addButton");
-const task = {
-    name: "laundy",
-    done: false,
-};
 const tasks = [
     { name: "laundry", done: false },
     { name: "walk the dog", done: true },
@@ -31,12 +27,12 @@ const render = () => {
         tasksContainerElement.appendChild(taskElement);
     });
 };
-const addTask = (taskName) => {
-    tasks.push({ name: taskName, done: false });
+const addTask = (task) => {
+    tasks.push(task);
 };
 addButtonElement.addEventListener("click", (event) => {
     event.preventDefault();
-    addTask(taskNameInputElement.value);
+    addTask({ name: taskNameInputElement.value, done: false });
     render();
 });
 render();
