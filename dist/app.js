@@ -14,10 +14,13 @@ const tasks = [
 const addTask = (task) => {
     tasks.push(task);
 };
+const updateSelectedCategory = (newCategory) => {
+    selectedCategory = newCategory;
+};
 addButtonElement.addEventListener("click", (event) => {
     event.preventDefault();
     addTask({ name: taskNameInputElement.value, done: false, category: selectedCategory });
     renderTasks(tasks, tasksContainerElement);
 });
-renderCategories(categories, selectedCategory, categoriesContainerElement);
+renderCategories(categories, categoriesContainerElement, updateSelectedCategory);
 renderTasks(tasks, tasksContainerElement);
